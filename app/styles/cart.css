@@ -1,0 +1,131 @@
+.content {
+    display: grid;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+@media(min-width:680px) {
+    .content {
+        grid-template-columns: 3fr 2fr;
+    }
+}
+
+@media(min-width:1220px) {
+    .content {
+        grid-template-columns: 3fr 1fr;
+    }
+}
+
+.cart {
+    padding: 3rem;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    padding: 3rem 0;
+    border-bottom: 1px solid #cfcfcf;
+    position: relative;
+    border-top: .5px solid rgb(243, 241, 241);
+}
+
+.product:last-of-type {
+    border-bottom: none;
+}
+
+.product p {
+    margin: 0 0 1rem 0;
+}
+
+
+.select {
+    all: unset;
+    border: 1px solid #cfcfcf;
+    text-align: center;
+    width: 100%;
+    padding: .5rem;
+    border-radius: 1rem;
+}
+
+.product span {
+    font-weight: 900;
+    font-size: 4.2rem;
+}
+
+.price span {
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    color: var(--primary);
+}
+
+.subtotal span {
+    font-size: 2.2rem;
+    color: var(--primary);
+}
+
+.product:last-of-type {
+    border-bottom: none;
+}
+
+.select {
+    all: unset;
+    border: 1px solid #cfcfcf;
+    text-align: center;
+    width: 100%;
+    padding: .5rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: var(--primary);
+}
+
+.quantity {
+    font-weight: 700;
+}
+
+.subtotal span {
+    font-size: 2.2rem;
+}
+
+.summary {
+    background-color: #e5eef7;
+    padding: 3rem;
+    text-align: center;
+    border-radius: 1rem;
+    position: sticky;
+    top: 3rem;
+
+}
+.summary span{
+    color:var(--primary);
+    font-weight: 600;
+}
+
+.btn_delete {
+    all: unset;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 0, 0);
+    color: rgb(245, 245, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    padding: 0;
+    font-weight: 600;
+}
+
+.btn_delete:hover {
+    cursor: pointer;
+    background-color: rgb(167, 164, 164);
+    color: rgb(170, 33, 33)
+}
