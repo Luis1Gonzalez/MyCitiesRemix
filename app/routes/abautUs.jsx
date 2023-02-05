@@ -1,4 +1,5 @@
 
+import construction from '../../public/img/construccion.jpg'
 
 export function meta() {
   return {
@@ -9,6 +10,8 @@ export function meta() {
 
 export default function Nosotros() {
   return (
-    <div>desde nosotros.jsx</div>
+    <div className='container'>
+      <img src={construction} alt="imagen de pagina en construcción" />
+    </div>
   )
 }

@@ -12,3 +12,17 @@ Al cargar este proyecto en vercel dio un error que tambien le paso a otros usuar
 Y finalmente instalando con npm i lo siguiente: @remix-run/vercel y @vercel/node
 
 y sino volver a las preguntas del video 301.
+
+tambien habra que sustituir el contenido del archivo remix.config.js, por lo siguiente:
+
+/** @type {import('@remix-run/dev').AppConfig} */
+module.exports = {
+  serverBuildTarget: "vercel",
+  server: process.env.NODE_ENV === "development" ? undefined : "./server.js",
+  ignoredRouteFiles: ["**/.*"],
+  future: {},
+  // appDirectory: "app",
+  // assetsBuildDirectory: "public/build",
+  // serverBuildPath: "build/index.js",
+  // publicPath: "/build/",
+};
